@@ -1,0 +1,42 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Use to center content
+.center { text-align: center; }
+
+// Set global page background
+body { background: #f2f2f2; }
+#main_content_wrap { background: inherit; }
+
+// Add title bar background
+#header_wrap { background: url("banner.png");  background-size: auto 100%; }
+
+// Remove black line between title bar and page
+#main_content_wrap { border-top: none; }
+
+// Enlarge and center project title
+#project_title { font-size: 48px; text-align: center; }
+#project_tagline { font-size: 32px; text-align: center; }
+
+// Recolor GitHub link to match banner
+#forkme_banner { background-color: #fc6e3d; }
+
+// Style for article title
+#title { font-size: 44px; text-align: center; }
+#description { font-size: 24px; text-align: center; }
+
+// Remove line from below header 2
+h2 { padding-bottom: 0; background: none; }
+
+// Make footer small, plain and bun color
+#footer_wrap { background: #eccf8a; }
+#main_content_wrap { border-bottom: none; }
+footer p { color: #222222; margin: 15px 0 15px 0; }
+footer a { color: #222222; }
+footer.inner { padding: 10px; }
+
+// Push footer to the bottom of page if it's smaller than screen height
+body { min-height: 100vh; display: flex; flex-direction: column; }
+#height_filler { flex: 1; }
